@@ -1,7 +1,36 @@
-.App {
-  text-align: center;
+/* Reset básico e fundo da página */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #90f4fb, #2681ff);
+  color: white;
 }
 
+/* Container principal da aplicação */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Cabeçalho centralizado */
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+/* Logo com rotação animada */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,25 +42,17 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
+/* Estilo para links (se houver) */
 .App-link {
   color: #61dafb;
 }
 
+/* Animação de rotação do logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
